@@ -1,22 +1,21 @@
-//Reverse number generator
-let n = 5220938;
+//Reverse number generator like 123 to 321;
+const prompt = require("prompt-sync")();
 
-let a = Math.floor(n / 1000000);
-n = n % 1000000;
 
-let b = Math.floor(n / 100000);
-n = n % 100000;
+let number  = prompt("please enter a three digit number(like 123): ");
 
-let c = Math.floor(n / 10000);
-n = n % 10000;
 
-let d = Math.floor(n / 1000);
-n = n % 1000;
+let n1 = Math.floor(number / 100);
+number = number % 100;
 
-let e = Math.floor(n / 100);
-n = n % 100;
+let n2 = Math.floor(number / 10);
+number = number % 10;
 
-let f = Math.floor(n / 10);
-n = n % 10;
+// number = number / 100;
 
-console.log("Reverse number: "+n+f+e+d+c+b+a);
+
+
+
+
+
+console.log(" Reverse number: " + number+n2+n1);

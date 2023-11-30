@@ -1,7 +1,14 @@
-const vi = 20;
-const a = 10;
-const t = 5;
+const prompt = require('prompt-sync')();
 
-const vf = vi + a * t ;
+const vi = parseFloat(prompt('Enter initial velocity (vi): '));
+const a = parseFloat(prompt('Enter acceleration (a): '));
+const t = parseFloat(prompt('Enter time (t): '));
 
-console.log("Final velocity: "+vf );
+const vf = vi + (a * t);
+
+console.log("Final velocity: " + vf);
+
+
+
+
+
