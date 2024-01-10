@@ -1,6 +1,10 @@
-let char = "a";
+const prompt = require('prompt-sync')();
 
-if ( char == "a" || char == "e " || char == "i"|| char == "o" || char == "u")
+
+let char = prompt("please enter your character: ");
+
+char = char.toLowerCase();
+if ( char == "a" || char == "e" || char == "i"|| char == "o" || char == "u")
 {
     console.log("Vowel character.");
 }
